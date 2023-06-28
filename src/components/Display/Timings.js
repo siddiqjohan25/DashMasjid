@@ -32,9 +32,7 @@ const Timings = () => {
   const db =  getFirestore(app);
   const auth =  getAuth(app);
   const user =  auth.currentUser;
-  function logResult() {
-    return 2 + 2;
-  }
+ 
   
   useEffect(() => {
 
@@ -142,7 +140,7 @@ const Timings = () => {
       const data = await getDocs(eventss);
     
          data.forEach((doc) => {
-
+           console.log(doc)
           setdataa(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
         
         });
@@ -156,17 +154,17 @@ const Timings = () => {
    
   }, [])
   
-  const timerId = setInterval(refreshClock, 1000);
+  // const timerId = setInterval(refreshClock, 1000);
     
-  function cleanup() {
-    clearInterval(timerId);
-  };
+  // function cleanup() {
+  //   clearInterval(timerId);
+  // };
   const [date, setDate] = useState(new Date());
 
   
-  function refreshClock() {
-    setDate(new Date());
-  }
+  // function refreshClock() {
+  //   setDate(new Date());
+  // }
   const weekday = [
     "Sunday",
     "Monday",
