@@ -151,14 +151,14 @@ const Timings = () => {
     };
 
     getevents();
+    var timer = setInterval(()=>setDate(new Date()), 1000 )
+        return function cleanup() {
+            clearInterval(timer)
+    }
    
   }, [])
   
-  // const timerId = setInterval(refreshClock, 1000);
-    
-  // function cleanup() {
-  //   clearInterval(timerId);
-  // };
+
   const [date, setDate] = useState(new Date());
 
   
