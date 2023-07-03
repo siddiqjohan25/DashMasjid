@@ -162,9 +162,7 @@ const Timings = () => {
   const [date, setDate] = useState(new Date());
 
   
-  // function refreshClock() {
-  //   setDate(new Date());
-  // }
+ 
   const weekday = [
     "Sunday",
     "Monday",
