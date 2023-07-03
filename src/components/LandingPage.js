@@ -95,25 +95,26 @@ const LandingPage = () => {
                   navbar ? "block" : "hidden"
                 }`}
               >
-                <ul className="items-center translate-x-[500px] justify-center space-y-8 my-8 md:flex md:space-x-6 md:space-y-0">
-                  <Link to={"/signin"}>
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 dark:focus:ring-blue-800 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                    >
-                      SIGN IN
-                    </button>
-                  </Link>
+                <ul className="items-center translate-x-[500px] justify-start space-y-8 my-8 md:flex md:space-x-6 md:space-y-0 ml-[-180px]">
+  <Link to={"/signin"}>
+    <button
+      type="button"
+      className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 dark:focus:ring-blue-800 font-bold rounded-lg text-xs px-5 py-2.5 text-center mr-2 mb-2 "
+    >
+      SIGN IN
+    </button>
+  </Link>
 
-                  <Link to={"/signup"}>
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 dark:focus:ring-blue-800 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                    >
-                      SIGN UP
-                    </button>
-                  </Link>
-                </ul>
+  <Link to={"/signup"}>
+    <button
+      type="button"
+      className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 dark:focus:ring-blue-800 font-bold rounded-lg text-xs px-5 py-2.5 text-center mr-2 mb-2"
+    >
+      SIGN UP
+    </button>
+  </Link>
+</ul>
+
               </div>
             </div>
             <div className="hidden space-x-2 md:inline-block"></div>
@@ -121,18 +122,18 @@ const LandingPage = () => {
         </nav>
         <div className="grid grid-flow-row lg:grid-cols-2 sm:grid-cols-1 mx-40 my-40 justify-between px-10">
           <div>
-            <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+            <h1 class="mb-2 text-5xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-5xl">
               <span class="text-transparent bg-clip-text bg-gradient-to-t from-[#E1C49A] to-amber-200">
                 DashMasjid.
               </span>
               <br />
             </h1>
-            <h1 className="mb-4 text-3xl font-extrabold  dark:text-white md:text-5xl lg:text-6xl text-blue-200">
+            <h1 className="mb-4 text-3xl font-extrabold  dark:text-white md:text-3xl lg:text-3xl text-blue-200">
             Unifying Ummah<br /> Through Technology.
             
             </h1>
 
-            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-blue-200">
+            <p class="text-lg font-normal text-gray-500 lg:text-lg dark:text-blue-200">
               Elegant-designed and user-friendly mosque dashboard. <br />{" "}
               Suitable for any type of mosque and can be access anywhere.
             </p>
@@ -198,9 +199,9 @@ const LandingPage = () => {
           <div>
             <img
               src="./LogoDashMasjid.png"
-              width={550}
-              height={550}
-              className="mx-auto mt-[-70px]"
+              width = "80%"
+              height= "80%"
+              className="mx-auto mr-5 mt-[-70px]"
               alt=""
             />
           </div>
