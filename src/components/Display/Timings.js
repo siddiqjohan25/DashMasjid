@@ -268,7 +268,7 @@ const Timings = () => {
        <span className='text-2xl  text-left font-semibold my-2 block'>
         
          <span className=''>
-         29 Zulhijjah 1444
+         {hijriDay}  {isalmicmonth[hijriMonth-1]}   {hijriYear}
          </span>
        </span>
        </h1>
