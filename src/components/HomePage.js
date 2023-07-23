@@ -659,7 +659,7 @@ const HomePage = () => {
                 >
                   Donation Analysis
                 </Typography>
-                <LineChart width={1088} height={300} data={lineGraphData}>
+                <LineChart width={1086} height={380} data={lineGraphData}>
                   {/* Chart components */}
                   <defs>
                     <filter
@@ -770,13 +770,6 @@ const HomePage = () => {
                   type="monotone"
                   dataKey="November"
                   stroke="#9feddc" // Adjust the line color
-                  strokeWidth={2} // Adjust the line thickness
-                  filter="url(#glow)" // Apply the glow effect
-                 />
-                 <Line
-                  type="monotone"
-                  dataKey="December"
-                  stroke="#ed7295" // Adjust the line color
                   strokeWidth={2} // Adjust the line thickness
                   filter="url(#glow)" // Apply the glow effect
                  />
