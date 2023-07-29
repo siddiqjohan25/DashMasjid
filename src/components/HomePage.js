@@ -723,6 +723,13 @@ const HomePage = () => {
                   strokeWidth={2} // Adjust the line thickness
                   filter="url(#glow)" // Apply the glow effect
                  />
+                    <Line
+                  type="monotone"
+                  dataKey="April"
+                  stroke="#02e452" // Adjust the line color
+                  strokeWidth={2} // Adjust the line thickness
+                  filter="url(#glow)" // Apply the glow effect
+                 />
                  <Line
                   type="monotone"
                   dataKey="May"
