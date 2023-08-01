@@ -83,7 +83,6 @@ const SignUp = () => {
   const changeregion = (e) => {
     setRegion(e.target.value);
     setLoad(!load);
-    console.log(region);
   };
   const changestate=(e)=>{
          setSelectedState(states[e.target.value])
@@ -276,8 +275,9 @@ const SignUp = () => {
               >
               {
                 showregions.map((item,index)=>{
+
                   return(
-                    index==0?<option value={item.nama} selected>{item.nama}</option>: <option value={item}>{item.nama}</option>
+                    index==0?<option value={item.nama} selected>{item.nama}</option>: <option value={item.nama}>{item.nama}</option>
                   )
                 })
               }
