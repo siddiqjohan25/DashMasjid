@@ -163,88 +163,88 @@ const Timings = () => {
   var hijriDay = Math.floor((hijriDate - Math.floor(hijriDate)) * 354.36707 % 29.530589)
   return (
     <div className=' min-h-screen bg-gradient-to-r from-[#02062a] to-[#343857] text-[#E1C49A] w-full'>
-      <Swiper
-        spaceBetween={30}
-
-        slidesPerView={1}
-        autoplay={{
-          delay: 5000,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        loop={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-
-        <SwiperSlide >
-
-          <div className=' max-h-screen text-center grid grid-cols-2'>
-            <div>
-
-              <h1 className=" block float-right text-left absolute m-8 mx-20  ">
-                <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
-                <br />
-                <span className='text-2xl  text-left font-semibold my-2 block'>
-                  {weekday[date.getDay()]} <br />
-                  <span className=''>
-                    {date.getDate()}  {Month[date.getMonth()]}  {date.getUTCFullYear()}
-                  </span>
-                </span>
-
-                <span className='text-2xl  text-left font-semibold my-2 block'>
-
-                  <span className=''>
-                    {hijriDay}  {isalmicmonth[hijriMonth - 1]}   {hijriYear}
-                  </span>
-                </span>
-              </h1>
-              <img className='mx-auto mt-[270px]' width={550}
-                height={550} src="./LogoDashMasjid.png" alt="" />
-
-
-            </div>
+    <Swiper
+    spaceBetween={30}
+    
+    slidesPerView={1}
+    autoplay={{
+      delay: 5000,
+    }}
+    pagination={{
+      clickable: true,
+    }}
+    navigation={true}
+    loop={true}
+    modules={[Autoplay, Pagination, Navigation]}
+    className="mySwiper"
+  >
+    
+       <SwiperSlide >
+          
+       <div className=' max-h-screen text-center grid grid-cols-2'>
+       <div>
+       
+       <h1 className=" block float-right text-left absolute m-8 mx-20  ">
+       <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
+       <br />
+       <span className='text-2xl  text-left font-semibold my-2 block'>
+         {weekday[date.getDay()]} <br />
+         <span className=''>
+         {date.getDate()}  {Month[date.getMonth()]}  {date.getUTCFullYear()}
+         </span>
+       </span>
+      
+       <span className='text-2xl  text-left font-semibold my-2 block'>
+        
+         <span className=''>
+         {hijriDay}  {isalmicmonth[hijriMonth-1]}   {hijriYear}
+         </span>
+       </span>
+       </h1>
+        <img className='mx-auto mt-[270px]' width={550}
+              height={550} src="./LogoDashMasjid.png" alt="" />
 
 
-            <div className='mx-20'>
+       </div>
 
-              <div className=' mt-52 text-4xl font-semibold mr-20  text-[#E1C49A]'>
-                <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Imsak</span> <span className='text-5xl font-bold'>{imsak}</span></h1>
-                <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Subuh</span> <span className='text-5xl font-bold'>{subuh}</span></h1>
-                <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Syuruk</span> <span className='text-5xl font-bold'>{syuruk}</span></h1>
-                <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Zohor</span> <span className='text-5xl font-bold'>{zohor}</span></h1>
-                <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Asar</span> <span className='text-5xl font-bold'>{asar}</span></h1>
-                <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Maghrib</span> <span className='text-5xl font-bold'>{maghrib}</span></h1>
-                <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Isyak</span> <span className='text-5xl font-bold'>{isyak}</span></h1>
-              </div>
-            </div>
-
-          </div>
-        </SwiperSlide>
+      
+       <div className='mx-20'>
+       
+       <div className=' mt-52 text-4xl font-semibold mr-20  text-[#E1C49A]'>
+       <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Imsak</span> <span className='text-5xl font-bold'>{imsak}</span></h1>
+       <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Subuh</span> <span className='text-5xl font-bold'>{subuh}</span></h1>
+       <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Syuruk</span> <span className='text-5xl font-bold'>{syuruk}</span></h1>
+       <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Zohor</span> <span className='text-5xl font-bold'>{zohor}</span></h1>
+       <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Asar</span> <span className='text-5xl font-bold'>{asar}</span></h1>
+       <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Maghrib</span> <span className='text-5xl font-bold'>{maghrib}</span></h1>
+       <h1 className='flex justify-between my-10'><span className='text-5xl font-bold'>Isyak</span> <span className='text-5xl font-bold'>{isyak}</span></h1>
+       </div>
+       </div>
+     
+      </div>
+       </SwiperSlide>
         {
           dataa.map((item, index) => {
             if (item.type === "event") {
               return (
                 <SwiperSlide key={index} className=' max-h-screen text-center'>
-                  <h1 className=" block float-right text-left absolute m-8 mx-20  ">
-                    <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
-                    <br />
-                    <span className='text-2xl  text-left font-semibold my-2 block'>
-                      {weekday[date.getDay()]} <br />
-                      <span className=''>
-                        {date.getDate()}  {Month[date.getMonth()]}  {date.getUTCFullYear()}
-                      </span>
-                    </span>
-
-                    <span className='text-2xl  text-left font-semibold my-2 block'>
-
-                      <span className=''>
-                        {hijriDay}  {isalmicmonth[hijriMonth - 1]}   {hijriYear}
-                      </span>
-                    </span>
-                  </h1>
+                <h1 className=" block float-right text-left absolute m-8 mx-20  ">
+                <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
+                <br />
+                <span className='text-2xl  text-left font-semibold my-2 block'>
+                  {weekday[date.getDay()]} <br />
+                  <span className=''>
+                  {date.getDate()}  {Month[date.getMonth()]}  {date.getUTCFullYear()}
+                  </span>
+                </span>
+               
+                <span className='text-2xl  text-left font-semibold my-2 block'>
+                 
+                  <span className=''>
+                  {hijriDay}  {isalmicmonth[hijriMonth-1]}   {hijriYear}
+                  </span>
+                </span>
+                </h1>
                   <h1 className='text-4xl py-20 font-semibold'>{item.NameOfEvent}</h1>
                   <img className='m-auto  max-w-2/3  max-h-[400px]  rounded-xl' src={item.image} alt="" />
                   <h1 className='text-4xl  px-20 font-semibold'>{item.DateOfEvent}</h1>
@@ -254,45 +254,45 @@ const Timings = () => {
             }
           })
         }
-
+       
 
         {
           dataa.map((item, index) => {
             if (item.type === "hadid") {
               return (
                 <SwiperSlide key={index} className='max-h-screen   text-center   text-xl '>
-                  <h1 className=" block float-right text-left absolute m-8 mx-20  ">
-                    <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
-                    <br />
-                    <span className='text-2xl  text-left font-semibold my-2 block'>
-                      {weekday[date.getDay()]} <br />
-                      <span className=''>
-                        {date.getDate()}  {Month[date.getMonth()]}  {date.getUTCFullYear()}
-                      </span>
-                    </span>
-
-                    <span className='text-2xl  text-left font-semibold my-2 block'>
-
-                      <span className=''>
-                        {hijriDay}  {isalmicmonth[hijriMonth - 1]}   {hijriYear}
-                      </span>
-                    </span>
-                  </h1>
+                <h1 className=" block float-right text-left absolute m-8 mx-20  ">
+                <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
+                <br />
+                <span className='text-2xl  text-left font-semibold my-2 block'>
+                  {weekday[date.getDay()]} <br />
+                  <span className=''>
+                  {date.getDate()}  {Month[date.getMonth()]}  {date.getUTCFullYear()}
+                  </span>
+                </span>
+               
+                <span className='text-2xl  text-left font-semibold my-2 block'>
+                 
+                  <span className=''>
+                  {hijriDay}  {isalmicmonth[hijriMonth-1]}   {hijriYear}
+                  </span>
+                </span>
+                </h1>
                   <h1 className='text-4xl py-20 font-semibold '>Hadid of the day</h1>
                   {
-                    item.image ?
-                      <img className='m-auto max-w-2/3 mt-5 rounded-xl h-[400px]' src={item.image} alt="" />
-                      :
-                      ""
+                    item.image?
+                    <img  className='m-auto max-w-2/3 mt-5 rounded-xl h-[400px]' src={item.image} alt="" />
+                    :
+                    ""
                   }
                   {
-                    item.image ?
-                      <h2 className='py-5 text-4xl   px-40 text-center  font-semibold'>
-                        {item.hadid}
-                      </h2> :
-                      <h2 className=' text-4xl py-40  px-40 text-center  font-semibold'>
-                        {item.hadid}
-                      </h2>
+                    item.image?
+                    <h2 className='py-5 text-4xl   px-40 text-center  font-semibold'>
+                    {item.hadid}
+                    </h2>:
+                    <h2 className=' text-4xl py-40  px-40 text-center  font-semibold'>
+                    {item.hadid}
+                    </h2>
 
                   }
                 </SwiperSlide>
@@ -301,7 +301,6 @@ const Timings = () => {
           })
         }
         <SwiperSlide className='max-h-screen'>
-
         <h1 className=" block float-right text-left absolute m-8 mx-20  ">
         <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
         <br />
@@ -319,18 +318,24 @@ const Timings = () => {
           </span>
         </span>
         </h1>
-         <div className='text-center text-xl px-40'>
-  <h1 className='text-4xl py-20 font-semibold'>Members of the day</h1>
-  <div className='flex flex-wrap justify-center items-center gap-4'>
-    {dataa.map((item, index) => {
-      if (item.type === "member") {
-        return (
-          <div key={index} className='w-80 bg-white transition-all my-3 duration-300 hover:scale-105 rounded-lg text-black'>
-            <h1 className='text-xl text-black font-bold my-1'>{item.name}</h1>
-            <h3 className='text-lg text-black font-semibold my-1'>{item.position}</h3>
-            <h3 className='text-lg text-black font-semibold my-1'>{item.day}</h3>
-
+        <div className='  text-center text-xl px-40 '>
+       
+          <h1 className='text-4xl py-20 font-semibold'>Member of the day</h1>
+          <div className='grid grid-flow-row grid-cols-2 gap-x-20 gap-y-10' >
+            {
+              dataa.map((item, index) => {
+                if (item.type === "member") {
+                  return (
+                    <div key={index} className='bg-white transition-all my-5 duration-500 hover:scale-105 rounded-lg text-black '>
+                      <h1 className='text-2xl text-black font-bold my-2'>{item.name}</h1>
+                      <h3 className='text-2xl text-black font-semibold my-2'>{item.position}</h3>
+                    </div>
+                  )
+                }
+              })
+            }
           </div>
+        </div>
         </SwiperSlide>
       </Swiper>
     </div>
