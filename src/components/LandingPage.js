@@ -186,7 +186,7 @@ const LandingPage = () => {
                     return (
                       <option
                         className="text-[#000000]"
-                        value={"email=" + item.email + "&region=" + item.region}
+                        value={"email=" + item.email + "&region=" + item.region+'&state='+item.state}
                       >
                         {item.MasjidName}
                       </option>
