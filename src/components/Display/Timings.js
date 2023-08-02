@@ -318,24 +318,22 @@ const Timings = () => {
           </span>
         </span>
         </h1>
-        <div className='  text-center text-xl px-40 '>
-       
-          <h1 className='text-4xl py-20 font-semibold'>Member of the day</h1>
-          <div className='grid grid-flow-row grid-cols-2 gap-x-20 gap-y-10' >
-            {
-              dataa.map((item, index) => {
-                if (item.type === "member") {
-                  return (
-                    <div key={index} className='bg-white transition-all my-5 duration-500 hover:scale-105 rounded-lg text-black '>
-                      <h1 className='text-2xl text-black font-bold my-2'>{item.name}</h1>
-                      <h3 className='text-2xl text-black font-semibold my-2'>{item.position}</h3>
-                    </div>
-                  )
-                }
-              })
-            }
+         <div className='text-center text-xl px-40'>
+  <h1 className='text-4xl py-20 font-semibold'>Member of the day</h1>
+  <div className='flex flex-wrap justify-center items-center gap-4'>
+    {dataa.map((item, index) => {
+      if (item.type === "member") {
+        return (
+          <div key={index} className='w-80 bg-white transition-all my-3 duration-300 hover:scale-105 rounded-lg text-black'>
+            <h1 className='text-xl text-black font-bold my-1'>{item.name}</h1>
+            <h3 className='text-lg text-black font-semibold my-1'>{item.position}</h3>
+            <h3 className='text-lg text-black font-semibold my-1'>{item.day}</h3>
           </div>
-        </div>
+        );
+      }
+    })}
+  </div>
+</div>
         </SwiperSlide>
       </Swiper>
     </div>
