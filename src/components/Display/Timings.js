@@ -301,38 +301,35 @@ const Timings = () => {
           })
         }
         <SwiperSlide className='max-h-screen'>
-          <h1 className=" block float-right text-left absolute m-8 mx-20  ">
-            <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
-            <br />
-            <span className='text-2xl  text-left font-semibold my-2 block'>
-              {weekday[date.getDay()]} <br />
-              <span className=''>
-                {date.getDate()}  {Month[date.getMonth()]}  {date.getUTCFullYear()}
-              </span>
-            </span>
 
-            <span className='text-2xl  text-left font-semibold my-2 block'>
+        <h1 className=" block float-right text-left absolute m-8 mx-20  ">
+        <span className="text-7xl font-bold">{date.toLocaleTimeString()}</span>
+        <br />
+        <span className='text-2xl  text-left font-semibold my-2 block'>
+          {weekday[date.getDay()]} <br />
+          <span className=''>
+          {date.getDate()}  {Month[date.getMonth()]}  {date.getUTCFullYear()}
+          </span>
+        </span>
+       
+        <span className='text-2xl  text-left font-semibold my-2 block'>
+         
+          <span className=''>
+          {hijriDay}  {isalmicmonth[hijriMonth-1]}   {hijriYear}
+          </span>
+        </span>
+        </h1>
+         <div className='text-center text-xl px-40'>
+  <h1 className='text-4xl py-20 font-semibold'>Members of the day</h1>
+  <div className='flex flex-wrap justify-center items-center gap-4'>
+    {dataa.map((item, index) => {
+      if (item.type === "member") {
+        return (
+          <div key={index} className='w-80 bg-white transition-all my-3 duration-300 hover:scale-105 rounded-lg text-black'>
+            <h1 className='text-xl text-black font-bold my-1'>{item.name}</h1>
+            <h3 className='text-lg text-black font-semibold my-1'>{item.position}</h3>
+            <h3 className='text-lg text-black font-semibold my-1'>{item.day}</h3>
 
-              <span className=''>
-                {hijriDay}  {isalmicmonth[hijriMonth - 1]}   {hijriYear}
-              </span>
-            </span>
-          </h1>
-          <div className='text-center text-xl px-40'>
-            <h1 className='text-4xl py-20 font-semibold'>Member of the day</h1>
-            <div className='flex flex-wrap justify-center items-center gap-4'>
-              {dataa.map((item, index) => {
-                if (item.type === "member") {
-                  return (
-                    <div key={index} className='w-80 bg-white transition-all my-3 duration-300 hover:scale-105 rounded-lg text-black'>
-                      <h1 className='text-xl text-black font-bold my-1'>{item.name}</h1>
-                      <h3 className='text-lg text-black font-semibold my-1'>{item.position}</h3>
-                      <h3 className='text-lg text-black font-semibold my-1'>{item.day}</h3>
-                    </div>
-                  );
-                }
-              })}
-            </div>
           </div>
         </SwiperSlide>
       </Swiper>
