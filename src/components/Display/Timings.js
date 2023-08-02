@@ -47,7 +47,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[0].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[0].waktu_solat[6].time)
         }
-        if(region==="petaling"){
+        else if(region==="petaling"){
           setimsak(response.data.data.negeri[10].zon[1].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[1].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[1].waktu_solat[2].time)
@@ -56,7 +56,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[1].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[1].waktu_solat[6].time)
         }
-        if(region==="sepang"){
+        else if(region==="sepang"){
           setimsak(response.data.data.negeri[10].zon[2].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[2].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[2].waktu_solat[2].time)
@@ -65,7 +65,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[2].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[2].waktu_solat[6].time)
         }
-        if(region==="hulu langat"){
+        else if(region==="hulu langat"){
           setimsak(response.data.data.negeri[10].zon[3].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[3].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[3].waktu_solat[2].time)
@@ -74,7 +74,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[3].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[3].waktu_solat[6].time)
         }
-        if(region==="hulu selangor"){
+        else if(region==="hulu selangor"){
           setimsak(response.data.data.negeri[10].zon[4].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[4].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[4].waktu_solat[2].time)
@@ -83,7 +83,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[4].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[4].waktu_solat[6].time)
         }
-        if(region==="s. alam"){
+        else if(region==="s. alam"){
           setimsak(response.data.data.negeri[10].zon[5].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[5].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[5].waktu_solat[2].time)
@@ -92,7 +92,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[5].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[5].waktu_solat[6].time)
         }
-        if(region==="kuala selangor"){
+        else if(region==="kuala selangor"){
           setimsak(response.data.data.negeri[10].zon[6].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[6].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[6].waktu_solat[2].time)
@@ -101,7 +101,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[6].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[6].waktu_solat[6].time)
         }
-        if(region==="sabak bernam"){
+        else if(region==="sabak bernam"){
           setimsak(response.data.data.negeri[10].zon[7].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[7].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[7].waktu_solat[2].time)
@@ -110,7 +110,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[7].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[7].waktu_solat[6].time)
         }
-        if(region==="klang"){
+        else if(region==="klang"){
           setimsak(response.data.data.negeri[10].zon[8].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[8].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[8].waktu_solat[2].time)
@@ -119,7 +119,7 @@ const Timings = () => {
           setmaghrib(response.data.data.negeri[10].zon[8].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[8].waktu_solat[6].time)
         }
-        if(region==="kuala langat"){
+        else if(region==="kuala langat"){
           setimsak(response.data.data.negeri[10].zon[9].waktu_solat[0].time)
           setsubuh(response.data.data.negeri[10].zon[9].waktu_solat[1].time)
           setsyuruk(response.data.data.negeri[10].zon[9].waktu_solat[2].time)
@@ -127,6 +127,15 @@ const Timings = () => {
           setasar(response.data.data.negeri[10].zon[9].waktu_solat[4].time)
           setmaghrib(response.data.data.negeri[10].zon[9].waktu_solat[5].time)
           setisyak(response.data.data.negeri[10].zon[9].waktu_solat[6].time)
+        }
+        else{
+          setimsak(response.data.data.negeri[10].zon[0].waktu_solat[0].time)
+          setsubuh(response.data.data.negeri[10].zon[0].waktu_solat[1].time)
+          setsyuruk(response.data.data.negeri[10].zon[0].waktu_solat[2].time)
+          setzohor(response.data.data.negeri[10].zon[0].waktu_solat[3].time)
+          setasar(response.data.data.negeri[10].zon[0].waktu_solat[4].time)
+          setmaghrib(response.data.data.negeri[10].zon[0].waktu_solat[5].time)
+          setisyak(response.data.data.negeri[10].zon[0].waktu_solat[6].time)
         }
         
         setLoading(false)
