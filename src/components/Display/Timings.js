@@ -318,8 +318,8 @@ const Timings = () => {
           </span>
         </span>
         </h1>
-         <div className='text-center text-xl px-40'>
-  <h1 className='text-4xl py-20 font-semibold'>Member of the day</h1>
+         <div className='text-center text-xl px-40 mt-5'>
+  <h1 className='text-4xl py-20 font-semibold'>Members of the day</h1>
   <div className='flex flex-wrap justify-center items-center gap-4'>
     {dataa.map((item, index) => {
       if (item.type === "member") {
